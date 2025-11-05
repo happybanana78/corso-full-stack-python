@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // doppio == (controlla solo valore e ignora il tipo di dato)
+        // triplo === (controlla sia il valore e sia il tipo di dato)
+        const numero = 10;
+
+        if (numero === 10) {
+            console.log('ciao1');
+        }
+
+        if (numero > 5) {
+            console.log('ciao2');
+        }
+
+        if (numero >= 5) {
+            console.log('ciao3');
+        }
+
+        if (numero < 5) {
+            console.log('ciao4');
+        }
+
+        if (numero <= 5) {
+            console.log('ciao5');
+        }
+
+        if (numero !== 10) {
+            console.log('ciao6');
+        } else {
+            console.log('ciao7');
+        }
+
+        // quando trova una condizione vera, si ferma e non controlla tutti gli altri else if
+        if (numero > 5) {
+            console.log('ciao8');
+        } else if (numero > 8) {
+            console.log('ciao9');
+        } else if (numero >= 16) {
+            console.log('ciao10');
+        } else {
+            console.log('ciao11');
+        }
+
+        switch (numero) {
+            case 10:
+                console.log('ciao12');
+                break;
+            case 16:
+                console.log('ciao13');
+                break;
+            default:
+                console.log('ciao14');
+        }
+
+        // condizioni multiple in un solo if
+        if (numero === 10 && numero > 5) {
+            console.log('ciao15');
+        }
+
+        if (numero === 10 || numero > 5) {
+            console.log('ciao16');
+        }
+
+
+        const variabileBooleana = false;
+
+        // stessa cosa di fare variabileBooleana === true
+        if (variabileBooleana) {
+            console.log('ciao17');
+        }
+
+        // stessa cosa di fare variabileBooleana === false
+        if (!variabileBooleana) {
+            console.log('ciao18');
+        }
+    </script>
+</body>
+</html>

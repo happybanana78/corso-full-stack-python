@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numero1 = 10;
+        const numero2 = 4;
+
+        // OPERATORI MATEMATICI
+
+        // somma
+        console.log(numero1 + numero2);
+
+        // sottrazione
+        console.log(numero1 - numero2);
+
+        // moltiplicazione
+        console.log(numero1 * numero2);
+
+        // divisione
+        console.log(numero1 / numero2);
+
+        // potenza
+        console.log(numero1 ** numero2);
+
+        // modulo
+        console.log(numero1 % numero2);
+
+        // modulo esempio pari/dispari (se il risultato è 0 il numero è pari)
+        const numeroDaVerificare = 11;
+        console.log(numeroDaVerificare % 2);
+
+        // OPERATORI DI ASSEGNAZIONE
+
+        // uguale (usiamo let per permettere di modificare il valore della variabile successivamente)
+        let numero = 10;
+
+        // aggiungi e assegna
+        numero += 2; // numero = numero + 2; (risultato: 12)
+
+        // aggiungi e sottrai
+        numero -= 2; // numero = numero - 2; (risultato: 8)
+
+        // aggiungi e moltiplica
+        numero *= 2; // numero = numero * 2; (risultato: 20)
+
+        // aggiungi e dividi
+        numero /= 2; // numero = numero / 2; (risultato: 5)
+
+        // incrementazione di 1 semplificata (aggiunge solo 1 al numero)
+        let numeroACaso1 = 10;
+        numeroACaso1++;
+
+        // decrementazione di 1 semplificata (sottrae solo 1 al numero)
+        let numeroACaso2 = 15;
+        numeroACaso2--;
+
+        // OPERAZIONE MATEMATICHE CON MATH
+
+        const numeroDaArrotondare = 10.6;
+
+        // Arrotondamento classico
+        console.log(Math.round(numeroDaArrotondare));
+
+        // Arrotondamento per eccesso
+        console.log(Math.ceil(numeroDaArrotondare));
+
+        // Arrotondamento per difetto
+        console.log(Math.floor(numeroDaArrotondare));
+
+        // Radice quadrata
+        const numeroDaRadicare = 10;
+        console.log(Math.sqrt(numeroDaRadicare));
+
+        // Numero massimo in una serie di numeri
+        console.log(Math.max(1,2,3,4,34,5,6,7,8));
+
+        // Numero minimo in una serie di numeri
+        console.log(Math.min(1,2,3,4,34,5,6,7,8));
+
+        // Generare un numero casuale
+        const numeroCasuale = Math.random();
+        console.log(numeroCasuale);
+
+        // Generare un numero causale da 1 a 100
+        const numeroCasualeRange = Math.floor(Math.random() * 100) + 1;
+        console.log(numeroCasualeRange);
+
+        // CONVERSIONE
+
+        // da stringa a numero
+        const numeroComeStringa = '10';
+        console.log(parseInt(numeroComeStringa)); // converte la stringa a un numero (se non è presente un numero risponde con NaN)
+        console.log(parseFloat(numeroComeStringa)); // converte la stringa (contentente un numero decimale) a un numero decimale (se non è presente un numero risponde con NaN)
+        console.log(Number(numeroComeStringa)); // converte la stringa a un numero (se non è presente un numero risponde con NaN)
+    
+        // da numero a stringa
+        const numeroComeNUmero = 10;
+        console.log(numeroComeNUmero.toString());
+    </script>
+</body>
+</html>

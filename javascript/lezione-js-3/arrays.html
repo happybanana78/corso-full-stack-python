@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // lista di elementi semrari da virgola
+        const frutta = ['mela', 'pera', 'banana'];
+
+        // si possono usare gli indici (come per le stringhe) per navigare la lista ed estrarre i singoli elementi
+        console.log(frutta[0]);
+
+        // .length ci da la quanità di elementi presenti nella lista
+        console.log(frutta.length);
+
+        // la sintatti qua sotto indica come prendere in automatico l'ultimo elemento della lista
+        console.log(frutta[frutta.length - 1]);
+
+        // aggiungere un elemento in coda alla lista
+        frutta.push('kiwi');
+        console.log(frutta);
+
+        // aggiungere un elemento in test alla lista
+        frutta.unshift('kiwi');
+        console.log(frutta);
+
+        // rimuovere l'ultimo elemento dalla lista
+        frutta.pop();
+        console.log(frutta);
+
+        // ritorna l'idice di un determinato elemento (ci da -1 se l'elemento passato non esiste nella lista)
+        console.log(frutta.indexOf('mela'));
+
+        // controlla se un elemento esiste all'interno di una lista (ci darà sempre un booleano come risposta)
+        console.log(frutta.includes('mela'));
+
+        // permette di unire elementi di una lista in una stringa seprando gli elementi con un separatore a scelta (in uqesto caso la ,)
+        console.log(frutta.join(','));
+    </script>
+</body>
+</html>

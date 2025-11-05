@@ -1,0 +1,52 @@
+.colore-titolo {
+    color: red;
+    font-weight: bolder;
+    background-color: black;
+    width: 400px;
+    height: 200px;
+    margin: 100px;
+    padding: 50px;
+    border: 5px solid red;
+    border-radius: 30px;
+}
+
+.carrello {
+    width: 200px; 
+    height: 100vh; 
+    background-color: black; 
+    position: fixed; 
+    top: 0;
+    right: -200px;
+}
+
+/* .colore-titolo:hover {
+    color: green;
+} */
+
+.dimensione-carattere-titolo {
+    font-size: 100px;
+}
+
+.input-focus-color:focus {
+    color: aqua;
+}
+
+.allinea-elementi {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sfondo-span {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.sfondo-span2 {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}

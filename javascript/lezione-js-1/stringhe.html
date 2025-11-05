@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const parola = ' Ciao ';
+
+        // Stampa una singola lettera (0 = C)
+        console.log(parola[0]);
+
+        // Stampa un range di lettere escludendo l'ultima (0, 2 = Ci)
+        console.log(parola.slice(0, 2));
+
+        // Stampa la lunghezza della parola (caratteri)
+        console.log(parola.length);
+
+        // Stampa la stringa in maiuscolo
+        console.log(parola.toUpperCase());
+
+        // Stampa la stringa in minuscolo
+        console.log(parola.toLowerCase());
+
+        // Stampa la stringa togliendo gli spazi in eccesso prima e dopo la stringa
+        console.log(parola.trim());
+
+        // Controlla se una parola o lettera esiste in una stringa
+        console.log(parola.includes('ci'));
+
+        // Stampa il valore dell'indice di una data lettera in una parola
+        console.log(parola.indexOf('i'));
+
+        // Sostituisce una parola/lettera con un'altra
+        console.log(parola.replace('ao', 'zz'));
+
+        // Unisce più stringhe tra di loro (concatenazione)
+        console.log(parola + 'Mondo');
+        console.log(`${parola} Mondo`);
+        console.log(`Oggi ho mangiato ${2} panini`);
+
+        // Usare l'accento in una stringa
+        console.log('l\'anno prossimo');
+    </script>
+</body>
+</html>

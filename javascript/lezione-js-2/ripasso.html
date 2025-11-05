@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // esercizio ripasso 1
+        // crea due variabili una contentente come valore il tuo nome e un altra contenente come valore il tuo cognome. crea una terza variabile che unisce le due variabili che hai creato prima. Infine stampa il valore della terza variabile usando il console.log()
+        const nome = 'leonardo';
+        const cognome = 'mazzoleni';
+        const unione1 = nome + ' ' + cognome;
+        const unione2 = `${nome} ${cognome}`;
+        console.log(unione1);
+        console.log(unione2);
+
+        // esercizio ripasso 2
+        // creare una variabile 'parola' e stampare con l'ausilio del console.log() la prima lettera, l'ultima lettera e la lunghezza totale delle lettere
+        const parola = 'parola';
+        console.log('prima parola', parola[0]);
+        console.log('ultima parola', parola[parola.length - 1]);
+        console.log('lunghezza parola', parola.length);
+
+        // esercizio ripasso 3
+        // Data la stringa "Ciao, mi chiamo NOME COGNOME e ho ANNI anni.", creare 3 variabili nome, cognome ed eta e sostituirle alle parole scritte in maiuscolo all'interno della frase. Alla fine usare console.log() per stampare il risultato finale
+        const name = 'leonardo';
+        const surname = 'mazzoleni';
+        const età = 26;
+        console.log(`Ciao mi chiamo ${name} ${surname} e ho ${età} anni.`);
+
+        let fraseIniziale = "Ciao mi chiamo NOME COGNOME e ho 26 anni.";
+        let fraseModificata = fraseIniziale.replace("NOME", name)
+            .replace("COGNOME", surname)
+            .replace('ANNI', età);
+        console.log(fraseModificata);
+    </script>
+</body>
+</html>
