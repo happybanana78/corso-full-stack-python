@@ -8,3 +8,6 @@ const somma = punteggi[0] + punteggi[1] + punteggi[2] + punteggi[3] + punteggi[4
 //const somma = punteggi.reduce((acc, curr) => acc + curr, 0);
 const media = somma / punteggi.length;
 console.log('media', media);
+
+
+console.log('ciao');
