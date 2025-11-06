@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const listaNumeri = [10, 56, 8, 23, 90];
+        const primoElemento = listaNumeri[0]; // uguale a 10
+        const ultimoElemento = listaNumeri[listaNumeri.length - 1]; // uguale a 90 (prende l'ultimo elemento)
+
+        // aggiungere elemnto
+        listaNumeri.push(68);
+        console.log(listaNumeri);
+
+        // rimuovere un elemento (in questo caso 8 è il numero che vogliamo togliere dall'array)
+        const indice = listaNumeri.indexOf(8); // in questo caso sarà 2
+        listaNumeri.splice(indice, 1);
+        console.log(listaNumeri);
+
+        // liste nestate
+        const matrice = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
+        ];
+        console.log(matrice[1][2]);
+    </script>
+</body>
+</html>
