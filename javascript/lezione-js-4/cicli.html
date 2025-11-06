@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="../esercizi/array.js"></script>
+</head>
+<body>
+    <script>
+        // CICLO FOR
+
+        const counter = 10;
+
+        // for loop, prende 3 parametri.
+        // il primo è una variabile (nome a vostra scelta) che di solito si fa partite da 0
+        // il secondo è la condizione, ovvero fino a quando il ciclo deve continuare a ripetere il codice al suo interno
+        // il terzo è l'incremento, ovvero l'aumento della variabile "i" di uno ogni volta che il ciclo finisce un giro
+        for (let i = 0; i < counter; i++) {
+            console.log(`ciao ${i}`);
+        }
+
+        const frutta = ['mela', 'pera', 'banana', 'kiwi'];
+
+        for (let i = 0; i < frutta.length; i++) {
+            console.log(frutta[i]);
+        }
+
+        const persona = {
+            nome: 'leonardo',
+            cognome: 'mazzoleni',
+            età: 26,
+        }
+
+        // for loop usato per ciclare gli oggetti
+        for (let key in persona) {
+            console.log(key, persona[key]);
+        }
+
+        // trasforma un oggetto in una lista
+        // .entries() genera una lista di liste dove ogni lista contiene due elementi, la chiave e il valore.
+        // .keys() genera una lista utilizzando solo le chiavi dell'oggetto
+        // .values() genera una lista utilizzando solo i valori dell'oggetto 
+        const personaComeLista = Object.entries(persona);
+
+        console.log(personaComeLista);
+
+        // CICLO WHILE
+
+        let counter2 = 0;
+
+        // il while perette di eseguire costantemnte la stessa operazione fino a quando la condizione è vera
+        while (counter2 <= 10) {
+            console.log(counter2);
+            counter2++;
+        }
+
+        let counter3 = 0;
+
+        // nel caso di un ciclo infinito (true) è possibile uscire preventivamente dal ciclo usando il break
+        while (true) {
+            counter3++;
+
+            console.log(counter3);
+
+            if (counter3 === 40) {
+                break;
+            }
+        }
+
+        let counter4 = 0;
+
+        // potete usare il 'continue' per saltare un giro, quando javascript vede 'continue' ignora tutto il codice che sta sotto e torna in cima.
+        while (true) {
+            counter4++;
+
+            if (counter4 === 25) {
+                continue;
+            }
+
+            console.log(counter4);
+
+            if (counter4 === 40) {
+                break;
+            }
+        }
+
+        // esempio con le liste
+        const macchine = ['toyota', 'tesla', 'mercedes'];
+
+        let counter5 = 0;
+
+        while (counter5 < macchine.length) {
+            console.log(macchine[counter5]);
+            counter5++;
+        }
+    </script>
+</body>
+</html>

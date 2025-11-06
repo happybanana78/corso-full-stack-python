@@ -5,26 +5,26 @@
 </head>
 <body>
     <script>
-        const persona = {
+        const persona1 = {
             'nome': 'leonardo',
             cognome: 'mazzoleni',
             età: 26,
         }
 
         // due modi per accedere alle propietà (chiavi)
-        console.log(persona.nome);
-        console.log(persona['nome']);
+        console.log(persona1.nome);
+        console.log(persona1['nome']);
 
         // modificare una propietà
-        persona.nome = 'mario';
-        console.log(persona.nome);
+        persona1.nome = 'mario';
+        console.log(persona1.nome);
 
         // eliminare una propietà
-        delete persona.età;
-        console.log(persona);
+        delete persona1.età;
+        console.log(persona1);
 
         // controllare se una proprietà esiste all'interno di un oggetto
-        console.log('cognome' in persona);
+        console.log('cognome' in persona1);
 
         // oggetti possono avere tutti i tipi di dati come valore delle loro propietà
         const studente = {
