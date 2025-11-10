@@ -1,0 +1,40 @@
+<!-- Crea un applicazione counter. avrai un tag <p> contenente '0' con due bottoni (fuori dal <p>), 
+uno con + e l'altro con - . Quando clicchi sul bottone + il numero dentro al <p> dovrà salire di uno 
+pero gni volta che viene cliccato, mentre se clicchi sul - il numero nel <p> dovrà scendere 
+di uno per ogni volta che il bottone viene cliccato.
+aggiunta: se si prova a cliccare il bottone - mentre sta a 0 non deve succedere nulla -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <p id="counter">0</p>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <button onclick="incrementa()">+</button>
+                <button onclick="decrementa()">-</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const counter = document.getElementById('counter');
+
+        function incrementa() {
+            const valoreCounter = parseInt(counter.innerText);
+            counter.innerText = valoreCounter + 1;
+        }
+
+        function decrementa() {
+            const valoreCounter = parseInt(counter.innerText);
+
+            if (valoreCounter > 0) {
+                counter.innerText = valoreCounter - 1;
+            }
+        }
+    </script>
+</body>
+</html>
