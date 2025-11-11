@@ -14,6 +14,14 @@
     <h1 id="titolo">Ciao Mondo</h1>
 
     <br>
+    <br>
+
+    <!-- andiamo a definire un input e un bottone, quando clicco sul bottone partirà la funzione mostraValore che mi mostrerà ciò che è stato scritto all'interno dell'input -->
+    <input id="input-a-caso" class="border-2 border-black ml-5">
+    <button class="px-4 py-2 bg-green-600 rounded-lg text-white" onclick="mostraValore()">cliccami per vedere il valore</button>
+
+    <br>
+    <br>
 
     <button class="px-4 py-2 bg-green-600 rounded-lg text-white" onclick="cambiaColore()">cliccami per cambiare colore</button>
 
@@ -54,6 +62,13 @@
         titolo.classList.remove('ciao', 'mario');
 
         console.log('rimozione classi', titolo);
+
+        function mostraValore() {
+            const inputACaso = document.getElementById('input-a-caso');
+
+            // .value ci darà il valore di quello che è stato scritto nell'input
+            alert(inputACaso.value);
+        }
 
         // funzione che viene chiamata dal bottone 'cliccami per cambiare colore' per cambiare il colore del testo dell'h1 titolo.
         function cambiaColore() {
@@ -118,7 +133,7 @@
         setTimeout(rimuoviElemento, 4000);
 
         // esegue la funzione ogni 3 secondi
-        setInterval(creaElemento, 3000);
+        //setInterval(creaElemento, 3000);
     </script>
 </body>
 </html>

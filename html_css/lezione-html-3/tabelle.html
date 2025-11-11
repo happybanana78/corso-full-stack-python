@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabelle</title>
+
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: start;
+        }
+
+        th, td {
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>questa è una tabella di prodotti</caption>
+        <thead>
+            <tr>
+                <!-- lo scope aiuta chi usa screen reader (i non vedenti) a capire che si tratta effettivamente di una colonna -->
+                <th scope="col">nome</th>
+                <th scope="col">categoria</th>
+                <th scope="col">prezzo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!-- colspan fai un modo che la cella (td) prenda lo spazio di più colonne -->
+                <td colspan="2">borsa nera</td>
+                <td>borse</td>
+                <!-- rowspan fa in modo che la cella prenda lo spazio di più righe -->
+                <td rowspan="2">230€</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">maglietta con orsetto</td>
+                <td>magliette</td>
+                <td>25€</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
