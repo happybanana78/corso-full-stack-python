@@ -1,0 +1,49 @@
+<script>
+        // Numero casuale tra 1 e 100
+        let numeroCasuale = Math.floor(Math.random() * 100) + 1;
+        console.log("Numero segreto:", numeroCasuale); // per debug
+
+        const inputNumero = document.getElementById("inputNumero");
+        const btnProva = document.getElementById("btnProva");
+        const btnReset = document.getElementById("btnReset");
+        const messaggio = document.getElementById("messaggio");
+
+        // Funzione per controllare il numero
+        btnProva.addEventListener("click", () => {
+            const numeroUtente = parseInt(inputNumero.value);
+
+            if (isNaN(numeroUtente)) {
+                messaggio.textContent = "❗ Inserisci un numero valido!";
+                messaggio.className = "mt-4 text-red-600 font-semibold";
+                return;
+            }
+
+            if (numeroUtente < numeroCasuale) {
+                messaggio.textContent = "📉 Numero troppo piccolo!";
+                messaggio.className = "mt-4 text-blue-600 font-semibold";
+            } else if (numeroUtente > numeroCasuale) {
+                messaggio.textContent = "📈 Numero troppo grande!";
+                messaggio.className = "mt-4 text-orange-600 font-semibold";
+            } else {
+                messaggio.textContent = "🎉 Hai vinto!";
+                messaggio.className = "mt-4 text-green-600 font-bold text-xl";
+                btnReset.classList.remove("hidden"); // mostra il bottone reset
+                btnProva.disabled = true; // disattiva il tasto prova
+                btnProva.classList.add("opacity-50", "cursor-not-allowed");
+            }
+        });
+
+        // Funzione per ricominciare
+        btnReset.addEventListener("click", () => {
+            numeroCasuale = Math.floor(Math.random() * 100) + 1;
+            console.log("Nuovo numero segreto:", numeroCasuale);
+            inputNumero.value = "";
+            messaggio.textContent = "";
+            btnReset.classList.add("hidden");
+            btnProva.disabled = false;
+            btnProva.classList.remove("opacity-50", "cursor-not-allowed");
+        });
+    </script>
+
+
+
