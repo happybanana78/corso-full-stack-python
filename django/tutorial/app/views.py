@@ -21,3 +21,10 @@ def index(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+
+def posts(request):
+    # prefetch_related precarica le relazioni direttamente con una query sql
+    users = User.objects.prefetch_related('posts')
+
+    return render(request, 'posts.html', {'users': users})
