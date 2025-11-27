@@ -9,7 +9,7 @@ def index(request):
 
     utente_filtrato = list(User.objects.filter(age__gt=20).filter(hobby='pesca').only('name'))
 
-    utente_esempio = User.objects.raw('SELECT * FROM app_user WHERE age > 20')
+    utente_esempio = User.objects.raw('SELECT * FROM users_app_user WHERE age > 20')
 
     # SELECT * FROM users
     # WHERE age >= 18
