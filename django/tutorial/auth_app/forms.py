@@ -24,4 +24,13 @@ class RegisterForm(forms.ModelForm):
             raise forms.ValidationError('Le password non sono uguali!')
 
         return cleaned_data
+
+
+class LoginForm(forms.Form):
+    username = forms.CharField(
+        widget=forms.TextInput,
+    )
+    password = forms.CharField(
+        widget=forms.PasswordInput,
+    )
     
